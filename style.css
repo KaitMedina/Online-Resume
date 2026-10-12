@@ -10,7 +10,7 @@
 body{
     font-family: "Orbitron", sans-serif;
 }
-h1, h2{
+h1, h2, p{
     color: #2F1F4C;
 }
 
@@ -24,21 +24,39 @@ h2{
     font-size: 28px;
 }
 
-.name{
+.right-side{
     position: absolute;
     right: 0;
+    width: 816px;
+    height: 1056px;
+    box-sizing: border-box;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.left-side{
+    position: absolute;
+    left: 0;
+    width: 816px;
+    height: 1056px;
+    box-sizing: border-box;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
 }
 .title{
-    position: absolute;
     width: 250px;
     background-color: #fffafd;
-    right: 0;
 }
+
 .profile{
-    position: absolute;
     width: 200px;
     background-color: #f5c1dd;
-    right: 0;
 }
 
 .contact{
@@ -47,10 +65,8 @@ h2{
 }
 
 .education{
-    position: absolute;
     width: 200px;
     background-color: #fffafd;
-    right: 0;
 }
 
 .skills{
@@ -59,10 +75,9 @@ h2{
 }
 
 .work{
-    position: absolute;
     width: 200px;
     background-color: #ffda94;
-    right: 0;
+    margin-bottom: 50px;
 }
 
 .reference{

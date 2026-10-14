@@ -3,9 +3,7 @@
     width: 816px;
     height: 1056px;
     background-color: #9ccde6;
-    display: flex;
-    justify-self: center;
-    margin-top: 50px;
+    margin: 40px auto;
 }
 body{
     font-family: "Orbitron", sans-serif;
@@ -23,64 +21,72 @@ h2{
     font-weight: 500;
     font-size: 28px;
 }
+.content{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 35px;
+}
 
-.right-side{
-    position: absolute;
-    right: 0;
-    width: 816px;
-    height: 1056px;
-    box-sizing: border-box;
-    padding-right: 60px;
+.right-column{
     display: flex;
     flex-direction: column;
-    align-items: end;
-    justify-content: space-between;
+    gap: 30px;
 }
-
-.left-side{
-    position: absolute;
-    left: 0;
-    width: 816px;
-    height: 1056px;
-    box-sizing: border-box;
-    padding-left: 60px;
+.header{
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-}
-.title{
-    width: 250px;
-    background-color: #fffafd;
+    align-items: center;
+    margin-bottom: 70px;
 }
 
-.profile{
+.header-info{
+    margin-left: 45px;
+}
+
+.job-title{
+    display: flex;
+    justify-content: end;
+}
+
+.photo-container{
     width: 200px;
+    height: 200px;
+    margin-left: 20px;
+
+    border: 4px solid #2F1F4C;
+    border-radius: 10px;
+    background-color: #ffda94;
+}
+.photo-container img{
+    width: 100%;
+    object-fit: cover;
+}
+.profile{
+    width: 370px;
     background-color: #f5c1dd;
 }
 
 .contact{
-    width: 200px;
+    width: 260px;
     background-color: #ace6c2;
 }
 
 .education{
-    width: 200px;
+    width: 400px;
     background-color: #fffafd;
 }
 
 .skills{
-    width: 200px;
+    width: 260px;
     background-color: #cfd4ff;
 }
 
 .work{
-    width: 200px;
+    width: 400px;
     background-color: #ffda94;
     margin-bottom: 50px;
 }
 
 .reference{
-    width: 200px;
+    width: 260px;
     background-color: #f5c1dd;
 }

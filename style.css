@@ -4,10 +4,13 @@
     height: 1056px;
     background-color: #9ccde6;
     margin: 40px auto;
+    padding: 60px 55px;
 }
+
 body{
     font-family: "Orbitron", sans-serif;
 }
+
 h1, h2, p{
     color: #2F1F4C;
 }
@@ -21,9 +24,16 @@ h2{
     font-weight: 500;
     font-size: 28px;
 }
+
 .content{
     display: grid;
     grid-template-columns: 300px 1fr;
+    gap: 25px;
+}
+
+.left-column{
+    display: flex;
+    flex-direction: column;
     gap: 35px;
 }
 
@@ -32,6 +42,7 @@ h2{
     flex-direction: column;
     gap: 30px;
 }
+
 .header{
     display: flex;
     align-items: center;
@@ -43,26 +54,36 @@ h2{
 }
 
 .job-title{
-    display: flex;
-    justify-content: end;
+    display: inline-block;
+    padding: 10px 25px;
+
+    background-color: white;
+    border: 4px solid #2F1F4C;
+    border-radius: 15px;
+
 }
 
 .photo-container{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin-left: 20px;
 
     border: 4px solid #2F1F4C;
     border-radius: 10px;
     background-color: #ffda94;
+
+    overflow: hidden;
 }
+
 .photo-container img{
     width: 100%;
     object-fit: cover;
 }
+
 .profile{
     width: 370px;
     background-color: #f5c1dd;
+    padding: 10px 30px;
 }
 
 .contact{
@@ -73,6 +94,25 @@ h2{
 .education{
     width: 400px;
     background-color: #fffafd;
+}
+
+.arrow{
+    position: absolute;
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    direction: rtl;
+    unicode-bidi: bidi-override;
+
+    right: 18px;
+    bottom: 15px;
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
 }
 
 .skills{

@@ -1,95 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="eng">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Online Resume</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" fetchpriority="high" />
 </head>
 
 <body>
-    <div class="star star-1">✦</div>
-    <div class="star star-2">✦</div>
-    <div class="star star-3">✦</div>
-    <div class="star star-4">✦</div>
-    <div class="star star-5">✦</div>
-    <div class="star star-6">✦</div>
-    <div class="star star-7">✦</div>
-    <div class="star star-8">✦</div>
+    <div class="resume" style="z-index: 1">
+        <!--Stars-->
+        <div class="star star-1">✦</div>
+        <div class="star star-2">✦</div>
+        <div class="star star-3">✦</div>
+        <div class="star star-4">✦</div>
+        <div class="star star-5">✦</div>
+        <div class="star star-6">✦</div>
+        <div class="star star-7">✦</div>
+        <div class="star star-8">✦</div>
 
-    <div class="resume" style="z-index: 1;">
+        <!-- Header -->
         <header class="header">
             <div class="photo-container">
-                <img src="images/me.png" alt="Kaitlyn Medina">
+                <img src="images/me.png" alt="Kaitlyn Medina" />
             </div>
             <div class="header-info">
-                <h1> Kaitlyn Medina</h1>
+                <h1>Kaitlyn Medina</h1>
                 <div class="job-title">
-                    <h2>Wine Manager</h2>
+                    Wine Manager
                 </div>
             </div>
         </header>
+
+        <!-- Main Content -->
         <main class="content">
+
+            <!-- Left Column -->
             <aside class="left-column">
-                <section class="contact">
+
+                <!-- Contact Section -->
+                <section class="card green">
                     <h2>Contact</h2>
-                    <div class="contact-content">
+                    <div class="card-content">
                         <p>✦ (818) 799-0106</p>
-                        <p>✦ kaitlyn.i.medina@gmail.com</p>
-                        <p>✦ 328 N Louise St., Apt. 3, Glendale, CA, 91206</p>
+                        <p style="font-size: 11px;">✦ kaitlyn.i.medina@gmail.com</p>
+                        <p>✦ 328 N Louise St. Apt. 3,</p> 
+                        <p class="indent">Glendale, CA, 91206</p>
                     </div>
                 </section>
-                <section class="skills">
+
+                <!-- Skills Section -->
+                <section class="card purple">
                     <h2>Skills</h2>
-                    <div class="skills-content">
+                    <div class="card-content">
                         <p>✦ Detailed</p>
                         <p>✦ Leadership</p>
                         <p>✦ Adaptable</p>
                         <p>✦ Team building</p>
                     </div>
                 </section>
-                <section class="reference">
+
+                <!-- Reference Section -->
+                <section class="card pink">
                     <h2>Reference</h2>
-                    <div class="reference-content">
-                        <p>✦ Julie Torrez</p>
-                        <p>Phone: (818) 573-0718</p>
-                        <p>✦ Shane Askin</p>
-                        <p>Phone: (818) 205-6237 </p>
+                    <div class="card-content references">
+                        <div class="reference">
+                            <p>✦ <strong>Julie Torrez</strong></p>
+                            <p class="phone">Phone: (818) 573-0718</p>
+                        </div>
+                        <div class="reference">
+                            <p>✦ <strong>Shane Askin</strong></p>
+                            <p class="phone">Phone: (818) 205-6237</p>
+                        </div>
                     </div>
                 </section>
             </aside>
+
+            <!-- Right Column -->
             <div class="right-column">
-                <section class="profile">
+
+                <!-- Profile Section -->
+                <section class="card profile-card pink">
                     <h2>Profile</h2>
-                    <div class="profile-content">
-                        <p>Hardworking and passionate leader with a variety of retail management experience. Able to coach and develop team members to support the needs of guests and driving store metrics.</p>
+                    <div class="card-content">
+                        <p>
+                            Hardworking and passionate leader with a variety of retail
+                            management experience. Able to coach and develop team members to
+                            support the needs of guests and driving store metrics.
+                        </p>
                     </div>
                 </section>
-                <section class="education">
+
+                <!-- Education Section -->
+                <section class="card education">
                     <h2>Education</h2>
-                    <div class="education-content">
+                    <div class="card-content">
                         <p>✦ Associate's Degree - Applied Science</p>
-                        <p class="bold-indent">Pasadena City College</p>
+                        <p class="bold indent">Pasadena City College</p>
                         <p>✦ Associate's Degree - Natural Science</p>
-                        <p class="bold-indent">Pasadena City College</p>
+                        <p class="bold indent">Pasadena City College</p>
                         <p>✦ Associate's Degree - Social & Behavioral Science</p>
-                        <p class="bold-indent">Pasadena City College</p>
+                        <p class="bold indent">Pasadena City College</p>
                         <p>✦ Associate's Degree - Humanities</p>
-                        <p class="bold-indent">Pasadena City College</p>
+                        <p class="bold indent">Pasadena City College</p>
                     </div>
                     <div class="arrow">
                         <p>➔</p>
                     </div>
                 </section>
-                <section class="work">
+
+                <!-- Work Experience Section -->
+                <section class=" card work">
                     <h2>Work Experience</h2>
-                    <div class="work-content">
-                        <p>✦ Front End Supervisor, Total Wine & More</p>
-                        <p>✦ Operations Supervisor, CVS Pharmacy</p>
+                    <div class="card-content">
+                        <div class="job">
+                            <p class="job-name">✦ Front End Supervisor, Total Wine & More</p>
+                        </div>
+                        <div class="job">
+                            <p class="job-name">✦ Operations Supervisor, CVS Pharmacy</p>
+                        </div>
                     </div>
                 </section>
             </div>
